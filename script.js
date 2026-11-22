@@ -16,7 +16,8 @@ function draw() {
 
     phase += 2* Math.PI * angular_velocity / 360;
 
-    [x, y] = polar2rectangular(phase)
+    const [x, y] = polar2rectangular(phase)
+    ctx.beginPath();
     ctx.arc(x, y, 5, 0, Math.PI * 2);
     ctx.stroke();
 
