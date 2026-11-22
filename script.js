@@ -1,4 +1,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-ctx.strokeRect(50,50,50,50);
+let x = 50
+let y = 50
+
+ctx.fillRect(x,y,1,1);
